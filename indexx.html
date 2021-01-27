@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work</title>
+</head>
+ 
+<!-- css files -->
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<body>
+
+
+    <!----------- head --------------->
+    <div class="head">
+       <div class="head-content">
+            <div class="logo">
+                <h3 class="logo-content">logo</h3>
+            </div> <!-- ./logo -->
+            <ul class="head-list">
+                <li><a href="#" class="active">главное</a></li>
+                <li><a href="#">авторизоваться</a></li>
+                <li><a href="#">о нас</a></li>
+                <li><a href="#">свяжитесь с нами</a></li>
+            </ul> <!-- ./head-list -->
+            <div class="clear"></div>
+       </div> <!-- ./head-content -->
+    </div> <!-- ./head -->
+
+
+    <!------------ sign-up ------------>
+   <div class="sign-up">
+     <div class="container">
+        <div class="sign-up-logo">
+            <h3>введите вашу информацию</h3>
+        </div> <!-- ./sign-up-logo -->
+   
+           <!----------- form --------------->
+       <form action="tomail:test@gmail.com" method="POST">
+           <input type="text" name="last_name" id="last_name" placeholder="Фамилия">
+           <input type="text" name="first_name" id="first_name" placeholder="Имя">
+           <label for="date">Дата Рождения : </label>
+           <input type="date" name="brithday" id="brithday">
+           <label for="gender">Пол : </label><br>
+           <select name="gender" id="gender"><br>
+               <option value="male">мужшина</option>
+               <option value="femal">женщина</option>
+               <option value="another">Другой</option>
+           </select> <!-- ./gender --> <br>
+
+           <p>откуда вы :</p>
+           <input type="radio" id="asia" name="continent" value="asia">
+           <label for="asia">из азии</label><br>
+           <input type="radio" id="afican" name="continent" value="afican">
+           <label for="afican">из африкы</label><br>
+           <input type="radio" id="europe" name="continent" value="europe">
+           <label for="europe">из европы</label><br><br>
+
+           <label for="best-color">любимый Цвет : </label>
+           <input type="color" name="best-color" id="best-color"><br>
+           <label for="remmeber-me">Запомни меня ? </label>
+           <input type="checkbox" name="remmeber-me" id="remmeber-me"> <br>
+           <div class="btns">
+            <button type="reset">reset</button>
+            <button type="submit">вводить</button>
+           </div> <!-- ./btns -->
+       </form>
+     </div> <!-- ./container -->
+   </div> <!-- ./sign up -->
+
+
+
+    
+</body>
+</html>
